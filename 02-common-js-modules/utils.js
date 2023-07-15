@@ -1,14 +1,14 @@
-function capitalizeWords(str) {
-	return str
+const capitalizeWords = (string) => {
+	return string
 		.toLowerCase()
 		.split(' ')
-		.map((word) => word[0].toUpperCase() + word.slice(1))
+		.map((word) => word[0].toUpperCase + word.slice(1))
 		.join(' ');
-}
+};
 
-function makeMoney(amount) {
+const makeMoney = (amount) => {
 	return `$${amount}`;
-}
+};
 
 module.exports = {
 	capitalizeWords,
